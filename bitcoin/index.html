@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bitcoin Evolution</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="The timeline of forks and key events in Bitcoin history" />
+  <meta name="author" content="Alexander Mishchenko" />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./site.webmanifest">
+  <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#2196f3">
+  <meta name="msapplication-TileColor" content="#2196f3">
+  <meta name="theme-color" content="#424242">
+</head>
+
+<body>
+  <div class="container">
+    <div class="top-section">
+      <h1>Bitcoin Evolution</h1>
+      <br>
+      <p>The exact history of Bitcoin is written in BIPs – "Bitcoin improvement Proposals" and is stored in the <a
+          href="https://github.com/bitcoin/bips">Bitcoin Github repo</a>. This article covers only the most significant
+        moments of Bitcoin's evolution. Things that affect the community and the <i>market cap</i> most of all, are the
+        forks. So, let's start with the important qustion.</p>
+      <br>
+      <p><strong>What are the different types of forks?</strong></p>
+      <br>
+      <p><strong>Hard fork</strong> splits the blockchain into two branches with different protocols. After the hard
+        fork you have same amount of money in both branches. But real value will most likely get distributed between
+        them, because a split causes users migration and falling of the original branch's market cap.</p>
+      <br>
+      <p><strong>Soft fork</strong> is a not necessary upgrade to the soft which runs the blockchain. You can ignore it
+        if you like. Upgraded nodes will keep supporting your transactions.</p>
+      <br>
+      <p><strong>Source Code fork</strong> is a way to create a completely different cryptocurrency. It is created by
+        modifying the code of an existing cryptocurrency. The word "fork" here refers to the code forking in version
+        control systems.</p>
+    </div>
+    <div class="timeline">
+      <div class="line"></div>
+
+      <div class="section">
+        <div class="bead"></div>
+        <div class="content">
+          <h4>January 2009</h4>
+          <h2>Genesis Block</h2>
+          <p>Satoshi mined the first-ever Bitcoin block. It's called a "Genesis Block".</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="bead"></div>
+        <div class="content">
+          <h4>January 2009</h4>
+          <h2>P2PKH addresses introduced</h2>
+          <p>Only after a week after mining the first block, "Pay to Public Key Hash" transactions started to be used.
+            They are a more secure replacement for P2PK, which is short for "Pay to Public Key", (no additional "Hash"
+            for the public key).</p>
+          <br>
+          <p>P2PKH addresses always start with "1". Nowadays they are also called "legacy".</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="bead"></div>
+        <div class="content">
+          <h4>May 2010</h4>
+          <h2>First real-world transaction</h2>
+          <p>Two pizzas were bought for 10 000 BTC.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="bead"></div>
+        <div class="content">
+          <h4>July 2010</h4>
+          <h2>First GPU miner</h2>
+          <p>The code was written and published to generate Bitcoins with a video card.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="bead"></div>
+        <div class="content">
+          <h4>October 2011</h4>
+          <h2>[Source Code fork] Litecoin (LTC)</h2>
+          <p>A new cryptocurrency invented which used "Scrypt" hashing function instead of SHA-256.</p>
+          <br>
+          <p>The idea was to make the proof-of-work more dependent on memory rather than on CPU power. It was meant to
+            achieve more "democratic" mining opposed to Bitcoin, where large players with GPU-based farms started to
+            appear.</p>
+          <br>
+          <p>However, the initial idea failed, because some companies introduced ASICs (special machines) for Scrypt
+            mining a few years later.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="bead"></div>
+        <div class="content">
+          <h4>January 2012</h4>
+          <h2>[Soft fork] P2SH and Multisig Addresses</h2>
+          <p>Pay-to-script hash (P2SH) addresses were introduced. Previously a signature had to match sender's public
+            address hash. After this update, it became possible to provide a hash of special "spending conditions", also
+            called a "redeem script".</p>
+          <br>
+          <p>The most common usage for the redeem script is to encode the necessity of several keys to approve the
+            transaction ("multi signature"). If part of the private keys are compromised, assets will still be secured.
+          </p>
+          <br>
+          <p>P2SH addresses always start with "3".</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="bead"></div>
+        <div class="content">
+          <h4>February 2012</h4>
+          <h2>Hierarchical Deterministic Wallets (HD) invented</h2>
+          <p>Such wallets generate a bunch of private keys from your "extended" private key. For each private key a
+            public key is generated as usual.</p>
+          <br>
+          <p>The benefits are:</p>
+          <p>• Nobody knows exact amount of money you have, because your funds are distributed among several addresses.
+          </p>
+          <p>• If one of your private keys gets hacked, you won't loose all your funds.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="bead"></div>
+        <div class="content">
+          <h4>December 2012</h4>
+          <h2>First ASIC miner developed</h2>
+          <p>ASIC is short for "application-specific integrated circuit". It is a hardware designed to do one thing and
+            one thing only – mine cryptocurrency.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="bead"></div>
+        <div class="content">
+          <h4>September 2013</h4>
+          <h2>Mnemonic codes</h2>
+          <p>An algorythm was proposed, which uses a list of English words to generate a "seed". Seed is a number used
+            by pseudo-random values generators to generate a private key. By this way, a seed determines your private
+            key.</p>
+          <br>
+          <p>The wallets using such approach are called "Deterministic Wallets" or "Hierarchical Deterministic Wallets"
+            if they also use "extended" private key.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="bead"></div>
+        <div class="content">
+          <h4>January 2017</h4>
+          <h2>Lightning Network</h2>
+          <p>Launch of the first Lightning Network implementation.</p>
+          <br>
+          <p>The idea was to open fast and cheap peer-to-peer payment channels between users. Bitcoin blockchain was
+            supposed to get updated only after closing the channel and only with a single consolidated transaction.</p>
+          <br>
+          <p>However the technology is not working good enough right now due to technical and legal issues.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="bead"></div>
+        <div class="content">
+          <h4>August 2017</h4>
+          <h2>[Soft fork] Segregated Witness (SegWit)</h2>
+          <p>The basic idea of SegWit was to store part of the data in the "sidechain". The data to be separated (or
+            "segregated") to this separate chain was chosen to be signatures. Signatures (or "witness data") are part of
+            each transaction and they take 65% of the space. The "sidechain" was implemented over the current blockchain
+            via a "Mercle tree". Such implementation made it possible to keep backward compatibility to the old
+            protocol.</p>
+          <br>
+          <p>The key improvements are:</p>
+          <p>• Smaller transaction sizes => more transactions in a block</p>
+          <p>• Fix for the "malleability issue" in Bitcoin. It is a security issue which allowed to fake "cancelled"
+            transactions by editing signature data while transaction is in a queue.</p>
+          <br>
+          <p>SegWit addresses can be Native and based on P2SH.</p>
+          <p>Former are also called bech32 or P2WPKH ("Pay to Witness Public Key Hash") and always start with "bc1".
+            They are generally better, but were not widely supported at start.</p>
+          <p>Latter are also called P2SH-P2WPKH and always start with "3" as well as all P2SH addresses.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="bead"></div>
+        <div class="content">
+          <h4>August 2017</h4>
+          <h2>[Hard fork] Bitcoin Cash (BCH)</h2>
+          <p>Opposed to SegWit as a "continuation of Satoshi Nakamoto's original vision". Same protocol as before, but
+            larger blocks. Faster, cheaper, but more centralized due to increased blockchain size.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="bead"></div>
+        <div class="content">
+          <h4>October 2017</h4>
+          <h2>[Hard fork] Bitcoin Gold (BTG)</h2>
+          <p>Another attempt to create an "ASIC-resistant" cryptocurrency. Developers invented so-called "Equihash"
+            memory intensive proof-of-work algorythm. However, an ASIC for this algorythm was created at least once
+            already. Developers continue the fight by enrolling new updates.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="bead"></div>
+        <div class="content">
+          <h4>November 2021</h4>
+          <h2>Bitcoin is $67 567 worth</h2>
+          <p>This is the highest price Bitcoin ever reached.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="bead"></div>
+        <div class="content">
+          <h4>June 2021</h4>
+          <h2>Bitcoin in El Salvador</h2>
+          <p>Bitcoin was adopted as legal tender in El Salvador by President Nayib Bukele.</p>
+          <br>
+          <p>The experiment is considered failed. Bitcoin is too volatile and slow itself, so actually it was used as a
+            guise for promoting a government-backed app called Chivo. Which turned to be a centralized service with lots
+            of security holes.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="bead"></div>
+        <div class="content">
+          <h4>February 2022</h4>
+          <h2>International sanctions against Russian people</h2>
+          <p>The year of 2022 showed that assets of a whole nation can be banned or arrested. Bitcoin and other
+            cryptocurrencies turned to be the only type of assets in the world, which are free from political risks.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="bead"></div>
+        <div class="content">
+          <h4>October 2022</h4>
+          <h2>760 000 blocks and 470Gb</h2>
+          <p>This is the state of Bitcoin blockchain at the time of writing this article.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="footer">Alexander Mishchenko   •   <a href="https://github.com/alexal1">GitHub</a>   •   October 2022</p>
+</body>
+<script src="./script.js"></script>
+
+</html>
